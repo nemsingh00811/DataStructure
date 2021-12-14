@@ -1,0 +1,34 @@
+#include<stdio.h>
+#include<string.h>
+#include<conio.h>
+struct add
+{
+ char city[20];
+ long int pin;
+ char state[20];
+};
+struct stud
+{
+ char stu_name[20];
+ int stu_rollno;
+ int stu_age;
+ struct add ad;
+};
+main()
+{
+ struct stud st;
+ clrscr();
+ strcpy(st.stu_name,"abc");
+ st.stu_rollno=1234;
+ st.stu_age=20;
+ strcpy(st.ad.city,"Noida");
+ st.ad.pin=201301;
+ strcpy(st.ad.state,"UP");
+ printf("\n\tStudent Name : %s",st.stu_name);
+ printf("\n\tStudent Roll Number : %d",st.stu_rollno);
+ printf("\n\tStudent Age : %d",st.stu_age);
+ printf("\n\tStudent City : %s",st.ad.city);
+ printf("\n\tStudent Pin : %ld",st.ad.pin);
+ printf("\n\tStudent State : %s",st.ad.state);
+ getch();
+}
