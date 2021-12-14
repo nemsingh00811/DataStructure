@@ -1,0 +1,56 @@
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+ int c1,c2,c3,c4,v;
+ char ch;
+ clrscr();
+ c1=c2=c3=c4=0;
+ do
+ {
+ clrscr();
+ printf("\n\tCandidate List ");
+ printf("\n\t1.RAJ ");
+ printf("\n\t2.ROHIT ");
+ printf("\n\t3.NAVEEN ");
+ printf("\n\t4.KUMAR");
+ printf("\n\n\tEnter the number of candidate of your choice : ");
+ scanf("%d",&v);
+ switch(v)
+ {
+ case 1 : c1++;
+break;
+ case 2 : c2++;
+break;
+ case 3 : c3++;
+break;
+ case 4 : c4++;
+break;
+ default : break;
+ }
+ printf("\tRAJ : %d",c1);
+ printf(" ROHIT : %d",c2);
+ printf(" NAVEEN : %d",c3);
+ printf(" KUMAR : %d",c4);
+ printf("\n\tPress y for next vote : ");
+ ch=getch();
+ }while(ch=='y');
+ printf("\n\n\tWinner is : ");
+ if(c1>c2&&c1>c3&&c1>c4)
+ {
+ printf("\n\n\t***********RAJ IS THE WINNER***********");
+ }
+ else if(c2>c1&&c2>c3&&c2>c4)
+ {
+ printf("\n\n\t***********ROHIT IS THE WINNER***********");
+ }
+ else if(c3>c1&&c3>c2&&c3>c4)
+ {
+ printf("\n\n\t***********NAVEEN IS THE WINNER***********");
+ }
+ else
+ {
+ printf("\n\n\t***********KUMAR IS THE WINNER***********");
+ }
+ getch();
+}
