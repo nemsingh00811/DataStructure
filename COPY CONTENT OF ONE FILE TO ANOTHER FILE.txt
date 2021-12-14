@@ -1,0 +1,42 @@
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+ FILE *fp,*ft;
+ char ch,c,d,e;
+ clrscr();
+ fp=fopen("adi.txt","w");
+ while(ch!='0')
+ {
+ scanf("%c",&ch);
+ fputc(ch,fp);
+ }
+ fclose(fp);
+ fp=fopen("adi.txt","r");
+ ft=fopen("abc.txt","w");
+ while(d!='0')
+ {
+ d=fgetc(fp);
+ fputc(d,ft);
+ }
+ fclose(fp);
+ fclose(ft);
+ fp=fopen("adi.txt","r");
+ printf("\nThe file is (adi.txt): \n");
+ while(c!='0')
+ {
+ c=fgetc(fp);
+ printf("%c",c);
+ }
+ fclose(fp);
+ ft=fopen("abc.txt","r");
+ printf("\nThe file is (abc.txt): \n");
+ while(e!='0')
+ {
+ e=fgetc(ft);
+ printf("%c",e);
+ }
+ fclose(ft);
+ getch();
+}
+ 
