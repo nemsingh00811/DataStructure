@@ -1,0 +1,18 @@
+
+H_F.h
+#include<stdio.h>
+#include<conio.h>
+void hl()
+{
+clrscr();
+printf("Hello!");
+getch();
+}
+
+
+HELO.C
+#include"H_F.h"
+main()
+{
+ hl();
+}
