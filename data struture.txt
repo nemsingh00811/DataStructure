@@ -11,7 +11,7 @@ main()
  struct stud st;
  clrscr();
  strcpy(st.stu_name,"abc");
- st.stu_rollno=1234;
+ st.stu_rollno=19111710;
  st.stu_age=20;
  printf("\n\tStudent Name : %s",st.stu_name);
  printf("\n\tStudent Roll Number : %d",st.stu_rollno);
